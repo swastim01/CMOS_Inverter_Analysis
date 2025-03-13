@@ -145,25 +145,6 @@ Each `.png` file represents the graph generated from the corresponding `.asc` sc
 
 ---
 
-## ⚡ Automating Analysis with Python
-For post-processing LTSpice results, use the Python scripts in `Scripts/`:
-1. **VTC Plotting**:
-   ```bash
-   python plot_vtc.py
-   ```
-2. **Power Analysis**:
-   ```bash
-   python analyze_power.py
-   ```
-3. **Delay Calculation**:
-   ```bash
-   python calculate_delay.py
-   ```
-
-These scripts process LTSpice data (`.raw` files) and generate **graphs & reports**.
-
----
-
 ## 🎯 Conclusion
 - **This project provides an in-depth CMOS inverter analysis**.
 - **Transistor sizing significantly affects delay, power, and noise margins**.
