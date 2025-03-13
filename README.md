@@ -13,39 +13,40 @@ The goal is to **optimize transistor sizing** and **understand the switching beh
 ---
 
 ## 📂 Project Structure
-
 ```
 CMOS_Inverter_Analysis/
-│── Library/
-│   ├── cmosn.asy            # Custom NMOS symbol for LTSpice
-│   ├── cmosp.asy            # Custom PMOS symbol for LTSpice
-│   ├── tsmc018.lib          # TSMC 180nm MOSFET models
-│
-│── Reports/
+│── Documentation/                     # Project documentation and analysis
 │   ├── Characteristics_Of_CMOS_Inverter_Circuit.md
 │   ├── CMOS_delay_detailed_analysis.md
 │   ├── DC_Analysis_CMOS_Inverter.md
 │   ├── DC_sweep_with_varying_Wp_analysis.md
 │
-│── Results/
+│── Library/                            # Required models and symbol files
+│   ├── cmosn.asy                       # Custom NMOS symbol for LTSpice
+│   ├── cmosp.asy                       # Custom PMOS symbol for LTSpice
+│   ├── tsmc018.lib                     # TSMC 180nm MOSFET models
+│
+│── Reports/                            # Generated images from simulations
+│   ├── Characteristics_Of_CMOS_Inverter_Circuit.png
+│   ├── CMOS_dc_sweep_Circuit.png
+│   ├── CMOS_Delay_calculations.png
+│   ├── CMOS_Power_Analysis_Circuit.png
+│   ├── DC_Analysis_CMOS_circuit.png
+│
+│── Results/                            # Final processed results
 │   ├── Characteristics_Of_CMOS_Inverter.png
+│   ├── CMOS_dc_power_analysis.png
 │   ├── CMOS_delay_detailed_analysis.png
 │   ├── DC_Analysis_CMOS_Inverter.png
 │   ├── DC_sweep_with_varying_Wp_analysis.png
 │
-│── Schematics/
-│   ├── CMOS_dc_power_analysis.asc          # LTSpice schematic for power analysis
-│   ├── CMOS_inverter_dc_sweep.asc          # LTSpice schematic for DC sweep
-│   ├── CMOS_Inverter.asc                    # Main CMOS inverter schematic
+│── Schematics/                         # LTSpice circuit schematics
+│   ├── CMOS_dc_power_analysis.asc      # LTSpice schematic for power analysis
+│   ├── CMOS_inverter_dc_sweep.asc      # LTSpice schematic for DC sweep
+│   ├── CMOS_Inverter.asc               # Main CMOS inverter schematic
 │
-│── Scripts/
-│   ├── plot_vtc.py                # Python script for plotting VTC curve
-│   ├── analyze_power.py            # Script for analyzing power dissipation
-│   ├── calculate_delay.py          # Script for extracting delay from LTSpice data
-│
-│── README.md                       # Project documentation
-│── LICENSE                          # License file (if applicable)
-│── .gitignore                        # Ignore unnecessary files (LTSpice backups, logs)
+│── README.md                           # Project documentation
+│── .gitignore                          # Ignore unnecessary files (LTSpice backups, logs)
 ```
 
 ---
